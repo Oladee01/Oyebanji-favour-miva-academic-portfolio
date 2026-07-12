@@ -88,16 +88,31 @@ main {
 }
 /* Introduction Showcase Card Styles */
 .intro-card {
-    background: #0b150f !important;
+    background: #0b150f !important; /* Keeps your dark forest color */
     color: #ffffff;
     border-radius: 24px;
-    padding: 3.5rem;
+    padding: 3rem;
     display: flex;
-    flex-direction: row; /* Forces side-by-side layout on desktop */
-    justify-content: space-between;
+    flex-direction: row;        /* Keeps elements side-by-side on desktop */
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 3rem;                  /* Gives breathing room between text and image */
     width: 100%;
+}
+/* Prevent the text side from squishing */
+.intro-text-side {
+    flex: 1; 
+    min-width: 300px;
+}
+
+/* Target the image container or the img tag directly inside your intro card */
+.intro-card img, .intro-profile-img {
+    flex: 1;
+    max-width: 450px;          /* Prevents your photo from eating up the layout */
+    width: 100%;
+    height: auto;              /* Maintains your aspect ratio */
+    border-radius: 16px;       /* Gives your profile photo smooth rounded corners */
+    object-fit: cover;
 }
 /* Typography Layout Side */
 .intro-text-side {
