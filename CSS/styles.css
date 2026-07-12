@@ -11,6 +11,7 @@
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Base resets to make sure layout looks identical on all browsers */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +19,11 @@
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #0b150f; /* Matches your ultra-dark forest color */
-    overflow-x: hidden;
-}
+    font-family: var(--font-main);
+    background-color: var(--bg-secondary);
+    color: var(--text-dark);
+    line-height: 1.6;
+    /* Layout Elements */
 /* Layout Elements */
 /* ==========================================================================
    Global Floating Navigation Header Layout
@@ -86,33 +87,21 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* Introduction Showcase Card Styles */
 .intro-card {
-    background: #0b150f !important; /* Keeps your dark forest color */
+    background: #0b150f !important; /* Forces the ultra-dark dark forest charcoal background to render */
     color: #ffffff;
     border-radius: 24px;
-    padding: 3rem;
+    padding: 3.5rem;
     display: flex;
-    flex-direction: row;        /* Keeps elements side-by-side on desktop */
     align-items: center;
-    justify-content: space-between;
-    gap: 3rem;                  /* Gives breathing room between text and image */
+    gap: 4rem;
+    margin: 2rem auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
     width: 100%;
-}
-/* Prevent the text side from squishing */
-.intro-text-side {
-    flex: 1; 
-    min-width: 300px;
-}
-
-/* Target the image container or the img tag directly inside your intro card */
-.intro-card img, .intro-profile-img {
-    flex: 1;
-    max-width: 450px;          /* Prevents your photo from eating up the layout */
-    width: 100%;
-    height: auto;              /* Maintains your aspect ratio */
-    border-radius: 16px;       /* Gives your profile photo smooth rounded corners */
-    object-fit: cover;
 }
 /* Typography Layout Side */
 .intro-text-side {
