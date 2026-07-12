@@ -11,7 +11,6 @@
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Base resets to make sure layout looks identical on all browsers */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +18,11 @@
 }
 
 body {
-    font-family: var(--font-main);
-    background-color: var(--bg-secondary);
-    color: var(--text-dark);
-    line-height: 1.6;
-    /* Layout Elements */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b150f; /* Matches your ultra-dark forest color */
+    overflow-x: hidden;
+}
 /* Layout Elements */
 /* ==========================================================================
    Global Floating Navigation Header Layout
@@ -87,20 +86,17 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 /* Introduction Showcase Card Styles */
 .intro-card {
-    background: #0b150f !important; /* Forces the ultra-dark dark forest charcoal background to render */
+    background: #0b150f !important;
     color: #ffffff;
     border-radius: 24px;
     padding: 3.5rem;
     display: flex;
+    flex-direction: row; /* Forces side-by-side layout on desktop */
+    justify-content: space-between;
     align-items: center;
-    gap: 4rem;
-    margin: 2rem auto;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
+    gap: 2rem;
     width: 100%;
 }
 /* Typography Layout Side */
