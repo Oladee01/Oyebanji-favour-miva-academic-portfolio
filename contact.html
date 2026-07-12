@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Academic Portfolio</h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>Have an academic collaboration request or web design project? Drop a message below!</p>
+            </div>
+
+            <div class="contact-card">
+                <div id="error-message" class="alert-box error-alert" style="display: none;"></div>
+                <div id="success-message" class="alert-box success-alert" style="display: none;"></div>
+
+                <form id="portfolio-contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="user-name">Full Name</label>
+                        <input type="text" id="user-name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-phone">Phone Number</label>
+                        <input type="text" id="user-phone" placeholder="Digits only, e.g., 08012345678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-message">Message</label>
+                        <textarea id="user-message" rows="5" placeholder="Write your message details here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-form-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Expanded Professional Footer -->
+    <footer class="site-footer">
+        <!-- Top CTA Bar -->
+        <div class="footer-cta-bar">
+            <h2>Let's <span class="highlight-text">Connect</span> there</h2>
+            <a href="contact.html" class="footer-btn">Get In Touch <span class="arrow">→</span></a>
+        </div>
+        
+        <hr class="footer-divider">
+
+        <!-- Main Link Matrix Grid -->
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="logo-dot">●</span> Oyebanji Favour
+                </div>
+                <p class="footer-desc">
+                    Cybersecurity student at MIVA Open University and professional video editor building secure, dynamic digital spaces.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">In</a>
+                    <a href="#" class="social-icon">Yt</a>
+                    <a href="#" class="social-icon">Gh</a>
+                </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html">Academic Planner</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:favour@example.com">favour@example.com</a></li>
+                    <li><span>Abuja, Nigeria</span></li>
+                    <li><span>MIVA Open University</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright strip -->
+        <div class="footer-bottom-strip">
+            <p>&copy; 2026 <span class="highlight-text">Oyebanji Favour</span>. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
