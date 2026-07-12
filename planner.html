@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner - Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Academic Portfolio</h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main class="planner-main-card">
+    <h2>MIVA Academic Planner</h2>
+    <p class="section-subtitle">Track your cybersecurity assignments, video edits, and weekly study objectives.</p>
+
+    <!-- Task Input Form Container -->
+    <div class="planner-input-container">
+        <input type="text" id="task-input" placeholder="e.g., Study Network Defense protocols...">
+        <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- The Interactive List -->
+    <ul id="planner-task-list">
+        <!-- JavaScript will automatically inject tasks right here -->
+    </ul>
+</main>
+
+<!-- CRITICAL: Make sure your script tag points to your JS file before the body closes -->
+<script src="js/planner.js"></script>
+<!-- Expanded Professional Footer -->
+    <footer class="site-footer">
+        <!-- Top CTA Bar -->
+        <div class="footer-cta-bar">
+            <h2>Let's <span class="highlight-text">Connect</span> there</h2>
+            <a href="contact.html" class="footer-btn">Get In Touch <span class="arrow">→</span></a>
+        </div>
+        
+        <hr class="footer-divider">
+
+        <!-- Main Link Matrix Grid -->
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="logo-dot">●</span> Oyebanji Favour
+                </div>
+                <p class="footer-desc">
+                    Cybersecurity student at MIVA Open University and professional video editor building secure, dynamic digital spaces.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">In</a>
+                    <a href="#" class="social-icon">Yt</a>
+                    <a href="#" class="social-icon">Gh</a>
+                </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html">Academic Planner</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:favour@example.com">favour@example.com</a></li>
+                    <li><span>Abuja, Nigeria</span></li>
+                    <li><span>MIVA Open University</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright strip -->
+        <div class="footer-bottom-strip">
+            <p>&copy; 2026 <span class="highlight-text">Oyebanji Favour</span>. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/planner.js"></script>
+</body>
+</html>
