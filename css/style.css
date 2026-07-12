@@ -1208,3 +1208,26 @@ main {
 .delete-task-btn:hover {
     transform: scale(1.2);
 }
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    /* 1. Prevent overlapping layout elements */
+    header {
+        position: relative; /* Changes it from fixed/sticky so it doesn't float over text */
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* 2. Force your intro section to stack vertically instead of side-by-side */
+    main, .hero-section, .container { 
+        display: flex;
+        flex-direction: column-reverse; /* Puts text first, image underneath (or use column) */
+        gap: 20px;
+        padding: 15px;
+    }
+
+    /* 3. Ensure the cards take up the full mobile width safely */
+    .hero-text-card, .profile-image-card {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
